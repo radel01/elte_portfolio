@@ -1,0 +1,425 @@
+@font-face {
+  font-family: "Gill Sans Nova Ultra Bold";
+  src: url("fonts/GillSansUltraBoNova.ttf") format("truetype");
+  font-weight: 900;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Inter";
+  src: url("fonts/Inter-VariableFont_opsz,wght.ttf") format("truetype");
+  font-weight: 100 900;
+  font-style: normal;
+}
+.img_border {
+  border-radius: 1.02vw;
+}
+body {
+  background-color: #fff8e6;
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+  color: #082005;
+}
+main {
+  padding-left: 2.03vw;
+  padding-right: 2.03vw;
+}
+h1,
+h2,
+h3,
+.footer_nev {
+  color: #e85d04;
+  font-family: "Gill Sans Nova Ultra Bold", sans-serif;
+}
+/* --------------------kezdolap--------------------- */
+.kezdolap_elso {
+  width: 100%;
+  position: relative;
+  padding-top: 2.54vw;
+}
+.kezdolap_elso img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.focim {
+  position: absolute;
+  top: 61%;
+  left: 55%;
+  transform: translate(-85%, -55%);
+  margin: 0;
+  z-index: 10;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+}
+.focim h1 {
+  font-size: 20.34vw;
+  line-height: 0.79;
+}
+.kezdolap_masodik {
+  margin-top: 4.24vw;
+  padding-top: 8.81vw;
+  padding-bottom: 2.03vw;
+  height: 40.68vw;
+}
+.ismerj_kombinalt {
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+  gap: 0.34vw;
+}
+.levelek_kep {
+  width: 20.34vw;
+  margin-top: 1.69vw;
+}
+.hosszu_szoveg {
+  text-align: justify;
+  font-size: 1.76vw;
+  padding-left: 0;
+  margin-top: 5.08vw;
+}
+.kod_kep {
+  margin-top: -11.02vw;
+  float: right;
+  width: 47%;
+  margin-bottom: 0;
+  margin-left: 3.39vw;
+}
+.meg_cim {
+  clear: right;
+  margin-top: 0.85vw;
+  font-size: 13.56vw;
+  float: right;
+  margin-right: 0;
+  padding-right: 0;
+  line-height: 0.9;
+  margin-bottom: 0;
+  margin-left: 2.71vw;
+}
+.ismerj_cim {
+  margin-top: 0.34vw;
+  font-size: 14.58vw;
+  margin-bottom: -0.17vw;
+  padding-bottom: 0;
+  line-height: 0.7;
+}
+.jobb_oldal {
+  margin-top: 0;
+  height: 1.69vw;
+}
+.bal_oldal {
+  margin-top: 0;
+  height: 33.9vw;
+}
+
+.kezdolap_harmadik {
+  height: 44.07vw;
+  padding-top: 8.81vw;
+  padding-bottom: 2.03vw;
+}
+
+.harmadik_grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 0;
+  margin-bottom: -6.78vw;
+  position: relative;
+  z-index: 2;
+}
+.szoveg_oszlop h3 {
+  font-size: 1.69vw;
+  margin-bottom: 1.36vw;
+  padding-bottom: 0;
+}
+.szoveg_oszlop {
+  font-size: 2.2vw;
+  margin-bottom: 0.17vw;
+  width: 25.42vw;
+}
+.szoveg_oszlop p {
+  text-align: justify;
+  margin-top: 0;
+  padding-right: 1.36vw;
+}
+.kep_oszlop {
+  position: relative;
+}
+.kezdolap_utolso_kep {
+  width: 23.73vw;
+  float: right;
+  position: relative;
+  z-index: 2;
+  display: block;
+}
+
+.utolso_csillag {
+  position: absolute;
+  z-index: 1;
+  width: 10vw;
+  top: -4.75vw;
+  left: 2.71vw;
+}
+.vezeteknev {
+  margin: 0;
+  line-height: 0.9;
+  position: relative;
+  z-index: 1;
+  font-size: 9.32vw;
+  letter-spacing: 0.0855em;
+}
+.keresztnev {
+  margin: 0;
+  line-height: 0.9;
+  text-align: right;
+  position: relative;
+  z-index: 1;
+  font-size: 9.32vw;
+  margin-right: -0.68vw;
+  letter-spacing: 0.0593em;
+}
+
+/* --------------------nav--------------------- */
+header {
+  position: sticky;
+  top: 0;
+  background-color: #fff8e660;
+  z-index: 1000;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+  scroll-behavior: smooth;
+  height: 2.54vw;
+  margin-left: 2.03vw;
+  margin-right: 2.03vw;
+  border-bottom-left-radius: 1.02vw;
+  border-bottom-right-radius: 1.02vw;
+}
+nav {
+  height: 100%;
+  font-size: 1.36vw; /* 20 / 14.75 */
+  padding-top: 0.34vw;
+  padding-left: 2.03vw;
+  padding-right: 2.03vw;
+}
+nav a {
+  text-decoration: none;
+  color: #082005;
+  padding-left: 0.68vw;
+  padding-right: 0.68vw;
+}
+nav a:hover {
+  color: #e85d04;
+}
+
+/* --------------------footer--------------------- */
+footer {
+  background-color: #082005;
+  color: #fff8e6;
+  border-top-left-radius: 8.47vw;
+  border-top-right-radius: 8.47vw;
+  padding-top: 3.39vw;
+  padding-bottom: 0;
+  padding-left: 3.39vw;
+  padding-right: 3.39vw;
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  height: 11.86vw;
+  font-weight: 300;
+}
+.footer_profil {
+  width: 8.14vw;
+}
+.footer_nev {
+  color: #e85d04;
+  font-size: 3.05vw;
+  line-height: 1;
+}
+.footer_right {
+  display: grid;
+  grid-template-columns: 4fr 1fr;
+}
+.footer_csillag {
+  width: 8.47vw;
+}
+.footer_felsorolasok {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  height: 9.15vw;
+}
+.footer_felsorolasok li {
+  font-size: 1.36vw;
+}
+footer h4 {
+  font-size: 1.69vw;
+  margin-bottom: 0.85vw;
+  padding-top: 0;
+  margin-top: 0.51vw;
+}
+.footer_elerhetosegek {
+  border-right: solid 1px #fff8e6;
+  margin-right: 0.85vw;
+  padding-right: 0.85vw;
+}
+
+.footer_left {
+  display: grid;
+  grid-template-columns: 1fr 5fr;
+}
+.footer_felsorolasok ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+.footer_bottom {
+  font-size: 0.68vw;
+  font-weight: 200;
+}
+
+/* ------------------------------------------kapcsolat oldal------------------------------------------------ */
+.kapcsolat_szekcio {
+    text-align: center;
+    padding-top: 1vw;
+    margin-bottom: 5vw;
+}
+
+.kapcsolat_cim {
+    margin-top: 0;
+    margin-bottom: 3.2vw;
+    font-size: 2.5vw;
+    letter-spacing: -2px;
+}
+
+.form_kontener {
+    position: relative;
+    width: 50%;
+    margin-top: 2vw;
+    margin-bottom: 5vw;
+    margin-left: auto;
+    margin-right: auto;
+    z-index: 1;
+}
+.narancs_hatter {
+    position: absolute;
+    top: -2.4vw; 
+    left: -2.4vw; 
+    width: calc(100% + 5vw); 
+    height: calc(100% + 5vw); 
+    background-color: #E85D04;
+    border-radius: 1.5vw; 
+    z-index: -1;
+}
+.kapcsolat_kep {
+    width: 100%;
+    display: block;
+    background-image: url('../media/kapcsolat1.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    aspect-ratio: 16 / 10;
+}
+
+.form_box {
+    position: absolute;
+    top: 40.5%;
+    left: 70.2%;
+    transform: translate(-50%, -50%);
+    width: 44.5%; 
+    height: 62.5%; 
+    background-color: rgba(255, 248, 230, 0.471);
+    padding: 1vw;
+    box-sizing: border-box; 
+    border-radius: 1vw; 
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 0.5vw;
+    align-content: start;
+}
+
+.form_field {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+}
+
+.form_field label {
+    font-size: 1.1vw;
+    margin-bottom: 0.2vw;
+}
+
+.form_field input,
+.form_field textarea {
+    font-family: 'Inter', sans-serif;
+    font-size: 1.1vw;
+    color: #082005;
+    background-color: transparent;
+    border: none;
+    border-radius: 0.5vw;
+    padding: 0.3vw;
+    width: 100%;
+    box-sizing: border-box;
+}
+.form_field input:not([type="radio"]):not([type="checkbox"]),
+.form_field textarea {
+     background-color: rgba(255, 248, 230, 0.9);
+}
+
+.textarea_field label {
+    margin-top: 0.4vw;
+}
+.form_options_container{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.form_options {
+    align-items: center;
+    gap: 1.2vw;
+    margin-top: 0.8vw;
+    margin-bottom: 0.8vw;
+    font-size: 1.1vw;
+}
+.checkbox_container{
+  float: right;
+  margin-top: 0.8vw;
+    margin-bottom: 0.8vw;
+    font-size: 1.1vw;
+}
+
+.option_group {
+    display: flex;
+    align-items: center;
+    gap: 0.4vw;
+}
+
+.option_group input[type="radio"] {
+    width: auto;
+    margin: 0;
+}
+
+.standalone_check {
+    margin-left: auto;
+}
+
+.form_buttons {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1.5vw;
+    width: 100%;
+    margin-top: 1vw;
+    justify-items: center;
+}
+
+.form_buttons button {
+    font-family: 'Inter', sans-serif;
+    font-size: 1.1vw;
+    font-weight: 700;
+    color: #fff8e6;
+    background-color: #082005;
+    border: none;
+    border-radius: 0.5vw;
+    padding: 0.5vw 1.5vw;
+    width: auto;
+    min-width: 7vw;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.form_buttons button:hover {
+    background-color: #E85D04;
+}
