@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="stilus/stilus.css" />
   </head>
   <body>
+    <a href="#fo-tartalom" class="skip-link">Ugrás a fő tartalomra</a>
     <header>
       <nav>
         <a href="index.html" class="active">Kezdőlap</a>
@@ -15,10 +16,12 @@
         <a href="tapasztalat.html">Tapasztalatom</a>
         <span class="separator">|</span>
         <a href="kapcsolat.html">Kapcsolat</a>
+        <button id="tema_gomb" onclick="temaValtas()">☾☼</button>
+        <button id="akadalymentes_gomb" onclick="kontraszt()">👁</button>
       </nav>
     </header>
 
-    <main>
+    <main id="fo-tartalom">
       <div class="kezdolap_elso">
         <div class="focim">
           <h1>Port<br />fólió</h1>
@@ -30,7 +33,7 @@
         />
       </div>
       <section class="kezdolap_masodik">
-        <h1 class="ismerj_cim">Ismerj</h1>
+        <h2 class="ismerj_cim">Ismerj</h2>
         <div class="ismerj_kombinalt">
           <aside class="bal_oldal">
             <img
@@ -45,7 +48,7 @@
               alt="Laptop kódolás"
               class="kod_kep img_border"
             />
-            <h1 class="meg_cim">Meg</h1>
+            <h2 class="meg_cim">Meg</h2>
             <p class="hosszu_szoveg">
               Roszkopf Adél Léna vagyok, az ELTE programtervező informatikus
               hallgatója. Szakmai utam során hazai és nemzetközi környezetben
@@ -137,5 +140,14 @@
         Utolsó frissítés: <time datetime="2026-03-15">2026.03.15.</time>
       </div>
     </footer>
+    <script>
+    function temaValtas() {
+      document.body.classList.toggle("sotet-mod");
+    }
+    function kontraszt() {
+      document.body.classList.toggle("akadalymentes-mod");
+    }
+  </script>
+</body>
   </body>
 </html>
