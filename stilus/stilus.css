@@ -11,7 +11,7 @@
   font-style: normal;
 }
 html {
-  background-color: #fff8e6; 
+  background-color: #fff8e6;
 }
 .img_border {
   border-radius: 1.02vw;
@@ -451,7 +451,7 @@ footer a:active {
   position: absolute;
   top: -100px;
   left: 0;
-  background-color: #E85D04;
+  background-color: #e85d04;
   color: white;
   padding: 10px 20px;
   text-decoration: none;
@@ -460,12 +460,12 @@ footer a:active {
   transition: 0.3s;
 }
 .skip-link:focus {
-  top: 0; 
+  top: 0;
 }
 
 /* --------------------------------------------------SÖTÉT MÓD--------------------------------------------------------- */
 body.sotet-mod {
-  background-color: #082005 !important; 
+  background-color: #082005 !important;
   color: #f0f0f0 !important;
 }
 #tema_gomb {
@@ -480,11 +480,11 @@ body.sotet-mod {
   position: absolute;
   top: 45%;
   transform: translateY(-50%);
-  font-size: 1.2vw; 
-  padding: 0.3vw 0.8vw; 
-  right: 6vw; 
+  font-size: 1.2vw;
+  padding: 0.3vw 0.8vw;
+  right: 6vw;
 }
-body.sotet-mod .form_box{
+body.sotet-mod .form_box {
   background-color: #082005c4 !important;
 }
 
@@ -494,8 +494,8 @@ body.sotet-mod .form_box{
   border-color: #e85d04;
 }
 
-footer{
-  background-color:#041500;
+footer {
+  background-color: #041500;
 }
 /* --------------------------------------------------Nagy kontraszt mód--------------------------------------------------------- */
 body.akadalymentes-mod,
@@ -504,36 +504,36 @@ body.akadalymentes-mod footer,
 body.akadalymentes-mod main,
 body.akadalymentes-mod .form_box {
   background-color: #000000 !important;
-  color: #FFFF00 !important;
+  color: #ffff00 !important;
   background-image: none !important;
 }
-body.akadalymentes-mod #tema_gomb{
+body.akadalymentes-mod #tema_gomb {
   color: white;
-  border-color:  white;
+  border-color: white;
 }
 body.akadalymentes-mod p,
 body.akadalymentes-mod a,
-body.akadalymentes-mod li{
-  font-size: 2vw !important; 
-  color: #FFFFFF !important;
+body.akadalymentes-mod li {
+  font-size: 2vw !important;
+  color: #ffffff !important;
   font-weight: bold !important;
 }
-body.akadalymentes-mod a.active{
-  font-size: 2vw !important; 
-  color: #FFFF00 !important;
+body.akadalymentes-mod a.active {
+  font-size: 2vw !important;
+  color: #ffff00 !important;
   font-weight: bold !important;
 }
-body.akadalymentes-mod a:visited{
-  color: #FFFF00 !important;
+body.akadalymentes-mod a:visited {
+  color: #ffff00 !important;
 }
-body.akadalymentes-mod a:hover{
+body.akadalymentes-mod a:hover {
   color: #ff0000 !important;
 }
 body.akadalymentes-mod h1,
 body.akadalymentes-mod h2,
 body.akadalymentes-mod h3 {
-  color: #FFFF00 !important;
-  border-bottom: 3px solid #FFFF00 !important;
+  color: #ffff00 !important;
+  border-bottom: 3px solid #ffff00 !important;
 }
 #akadalymentes_gomb {
   background-color: black;
@@ -548,8 +548,8 @@ body.akadalymentes-mod h3 {
   transition: 0.3s;
   transform: translateY(-50%);
   font-size: 1.2vw;
-  padding: 0.3vw 0.8vw; 
-  right: 2vw; 
+  padding: 0.3vw 0.8vw;
+  right: 2vw;
 }
 
 /* --------------------------------------------------RESZPONZÍV NÉZETEK--------------------------------------------------------- */
@@ -587,12 +587,12 @@ body.akadalymentes-mod h3 {
     height: 70vw;
     width: 70vw;
   }
-  .kezdolap_masodik, 
-  .bal_oldal, 
+  .kezdolap_masodik,
+  .bal_oldal,
   .jobb_oldal {
     height: auto;
   }
-  .szoveg_oszlop h3{
+  .szoveg_oszlop h3 {
     font-size: 3vw;
   }
   .kezdolap_masodik {
@@ -645,7 +645,7 @@ body.akadalymentes-mod h3 {
   .ismerj_kombinalt {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-template-areas: 
+    grid-template-areas:
       "jobb jobb"
       "jobb jobb";
   }
@@ -669,42 +669,54 @@ body.akadalymentes-mod h3 {
   .levelek_kep {
     visibility: hidden;
   }
-  #tema_gomb, #akadalymentes_gomb {
-    font-size: 3vw; 
+  #tema_gomb,
+  #akadalymentes_gomb {
+    font-size: 3vw;
     padding: 1.1vw 2.5vw;
     border-radius: 5vw;
     border-width: 0.3vw;
   }
   #tema_gomb {
-    right: 12vw; 
+    right: 12vw;
   }
-  header{
+  header {
     height: 8.54vw;
   }
   nav {
-  font-size: 3.36vw;
-  display: flex;
-  align-items: center;
-  
+    font-size: 3.36vw;
+    display: flex;
+    align-items: center;
   }
-  footer{
+  footer {
     height: 18vw;
   }
-  .footer_felsorolasok li{
+  .footer_felsorolasok li {
     font-size: 2.3vw;
   }
-  footer h4{
+  footer h4 {
     font-size: 2.7vw;
   }
   .footer_bottom {
-  font-size: 1.68vw;
-}
-body.akadalymentes-mod header a{
-  font-size: 3.4vw !important;
-}
-body.akadalymentes-mod header a.active{
-  font-size: 3.4vw !important;
-}
+    font-size: 1.68vw;
+  }
+  body.akadalymentes-mod header a {
+    font-size: 3.4vw !important;
+  }
+  body.akadalymentes-mod header a.active {
+    font-size: 3.4vw !important;
+  }
+  .kapcsolat_szekcio{
+    height: 100vw;
+  }
+  .narancs_hatter{
+    height: 55vw;
+  }
+  .kapcsolat_kep{
+    height: 50vw;
+  }
+  .form_field label, .form_field input, .form_field textarea{
+    font-size: 1.6vw;
+  }
 }
 
 @media screen and (max-width: 600px) {
@@ -751,7 +763,6 @@ body.akadalymentes-mod header a.active{
     margin-right: 0;
   }
 
-  
   .kezdolap_masodik {
     height: auto;
     padding-bottom: 0vw;
@@ -762,13 +773,13 @@ body.akadalymentes-mod header a.active{
     gap: 5vw;
   }
   .jobb_oldal {
-    order: 1; 
+    order: 1;
     display: flex;
     flex-direction: column;
     height: auto;
   }
   .bal_oldal {
-    order: 2; 
+    order: 2;
     height: 0;
   }
   .ismerj_cim {
@@ -777,7 +788,7 @@ body.akadalymentes-mod header a.active{
     margin-bottom: 0;
   }
   .meg_cim {
-    order: 1; 
+    order: 1;
     float: none;
     margin: 0;
     margin-top: 0vw;
@@ -785,7 +796,7 @@ body.akadalymentes-mod header a.active{
     text-align: right;
   }
   .kod_kep {
-    order: 3; 
+    order: 3;
     float: none;
     width: 100%;
     margin-top: 5vw;
@@ -794,7 +805,25 @@ body.akadalymentes-mod header a.active{
   .levelek_kep {
     visibility: hidden;
   }
-  
+  .narancs_hatter{
+    height: 75vw;
+    width: 70vw;
+    left: 50%;
+    transform: translateX(-50%);
+    top: -2.5vw;
+  }
+  .kapcsolat_kep{
+    height: 70vw;
+    width: 65vw;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    display: block; /* Csak blokk elemeket lehet marginnal középre tenni */
+    float: none;    /* KIKAPCSOLJUK a lebegtetést, ha volt asztalin! */
+    left: 0;        /* Nullázzuk az esetleges asztali eltolásokat */
+    right: 0;
+    transform: none;
+  }
 }
 /* @media screen and (min-width: 2000px) {
   body {
