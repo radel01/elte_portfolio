@@ -195,7 +195,7 @@ header {
 }
 nav {
   height: 100%;
-  font-size: 1.36vw; /* 20 / 14.75 */
+  font-size: 1.36vw;
   padding-top: 0.34vw;
   padding-left: 2.03vw;
   padding-right: 2.03vw;
@@ -468,22 +468,21 @@ body.sotet-mod {
   background-color: #082005 !important; 
   color: #f0f0f0 !important;
 }
-
 #tema_gomb {
   background: none;
-  border: 1px solid #082005;
-  padding: 5px 10px;
-  border-radius: 20px;
+  border: 0.1vw solid #082005;
   color: #082005;
+  border-radius: 2vw;
   cursor: pointer;
   font-weight: bold;
   font-family: inherit;
   transition: 0.3s;
   position: absolute;
-  right: 5vw;
   top: 45%;
   transform: translateY(-50%);
-
+  font-size: 1.2vw; 
+  padding: 0.3vw 0.8vw; 
+  right: 6vw; 
 }
 body.sotet-mod .form_box{
   background-color: #082005c4 !important;
@@ -533,18 +532,20 @@ body.akadalymentes-mod h3 {
   border-bottom: 3px solid #FFFF00 !important;
 }
 #akadalymentes_gomb {
-  position: absolute;
-  right: 2vw;
-  top: 45%;
-  transform: translateY(-50%);
-  border-radius: 20px;
   background-color: black;
-  border: 2px solid yellow;
-  padding: 5px 10px;
+  border: 0.15vw solid yellow;
   color: yellow;
+  border-radius: 2vw;
   font-weight: bold;
   cursor: pointer;
   z-index: 100;
+  position: absolute;
+  top: 45%;
+  transition: 0.3s;
+  transform: translateY(-50%);
+  font-size: 1.2vw;
+  padding: 0.3vw 0.8vw; 
+  right: 2vw; 
 }
 /* --------------------------------------------------RESZPONZÍV NÉZETEK--------------------------------------------------------- */
 
@@ -663,6 +664,37 @@ body.akadalymentes-mod h3 {
   .levelek_kep {
     visibility: hidden;
   }
+  #tema_gomb, #akadalymentes_gomb {
+    font-size: 3vw; 
+    padding: 1.1vw 2.5vw;
+    border-radius: 5vw;
+    border-width: 0.3vw;
+  }
+  #tema_gomb {
+    right: 12vw; 
+  }
+  header{
+    height: 8.54vw;
+  }
+  nav {
+  font-size: 3.36vw;
+  display: flex;
+  align-items: center;
+  
+  }
+  footer{
+    height: 18vw;
+    padding-top: 6vw;
+  }
+  .footer_felsorolasok li{
+    font-size: 2.3vw;
+  }
+  footer h4{
+    font-size: 2.7vw;
+  }
+  .footer_bottom {
+  font-size: 1.68vw;
+}
 }
 
 @media screen and (max-width: 600px) {
@@ -752,6 +784,7 @@ body.akadalymentes-mod h3 {
   .levelek_kep {
     visibility: hidden;
   }
+  
 }
 /* @media screen and (min-width: 2000px) {
   body {
