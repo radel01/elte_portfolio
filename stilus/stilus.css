@@ -507,6 +507,10 @@ body.akadalymentes-mod .form_box {
   color: #FFFF00 !important;
   background-image: none !important;
 }
+body.akadalymentes-mod #tema_gomb{
+  color: white;
+  border-color:  white;
+}
 body.akadalymentes-mod p,
 body.akadalymentes-mod a,
 body.akadalymentes-mod li{
@@ -547,6 +551,7 @@ body.akadalymentes-mod h3 {
   padding: 0.3vw 0.8vw; 
   right: 2vw; 
 }
+
 /* --------------------------------------------------RESZPONZÍV NÉZETEK--------------------------------------------------------- */
 
 @media screen and (max-width: 900px) {
@@ -684,7 +689,6 @@ body.akadalymentes-mod h3 {
   }
   footer{
     height: 18vw;
-    padding-top: 6vw;
   }
   .footer_felsorolasok li{
     font-size: 2.3vw;
@@ -694,6 +698,12 @@ body.akadalymentes-mod h3 {
   }
   .footer_bottom {
   font-size: 1.68vw;
+}
+body.akadalymentes-mod header a{
+  font-size: 3.4vw !important;
+}
+body.akadalymentes-mod header a.active{
+  font-size: 3.4vw !important;
 }
 }
 
