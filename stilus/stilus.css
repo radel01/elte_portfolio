@@ -21,11 +21,17 @@ body {
   font-family: "Inter", sans-serif;
   font-weight: 400;
   color: #082005;
+  margin: 0;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
 }
 main {
   padding-left: 2.03vw;
   padding-right: 2.03vw;
+  flex-grow: 1;
 }
+
 h1,
 h2,
 h3,
@@ -462,7 +468,42 @@ footer a:active {
 .skip-link:focus {
   top: 0;
 }
-
+/* --------------------------------------------------Tapasztalat oldal--------------------------------------------------------- */
+.tapasztalat_elso{
+  background-color: #082005;
+  width: 100%;
+  height: 27vw;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin-top: 2.54vw ;
+  padding-top: 5vw;
+  padding-right: 15vw;
+}
+.tapasztalat_kep{
+  width: 25vw;
+  padding-left: 10vw;
+  padding-top: 3vw;
+}
+.Tcim1 {
+  margin: 0;
+  line-height: 0.9;
+  position: relative;
+  z-index: 1;
+  font-size: 11vw;
+  letter-spacing: 0.0em;
+}
+.Tcim2 {
+  margin: 0;
+  line-height: 0.9;
+  text-align: right;
+  position: relative;
+  z-index: 1;
+  font-size: 11vw;
+  padding-left: 1.3vw;
+}
+.tapasztalat_masodik{
+  height: 80vh;
+}
 /* --------------------------------------------------SÖTÉT MÓD--------------------------------------------------------- */
 body.sotet-mod {
   background-color: #082005 !important;
@@ -705,16 +746,23 @@ body.akadalymentes-mod h3 {
   body.akadalymentes-mod header a.active {
     font-size: 3.4vw !important;
   }
-  .kapcsolat_szekcio{
+  .kapcsolat_szekcio {
     height: 100vw;
+    padding-top: 7vw;
   }
-  .narancs_hatter{
+  .kapcsolat_cim {
+    padding-bottom: 3vw;
+    font-size: 4vw;
+  }
+  .narancs_hatter {
     height: 55vw;
   }
-  .kapcsolat_kep{
+  .kapcsolat_kep {
     height: 50vw;
   }
-  .form_field label, .form_field input, .form_field textarea{
+  .form_field label,
+  .form_field input,
+  .form_field textarea {
     font-size: 1.6vw;
   }
 }
@@ -805,24 +853,35 @@ body.akadalymentes-mod h3 {
   .levelek_kep {
     visibility: hidden;
   }
-  .narancs_hatter{
+  .narancs_hatter {
     height: 75vw;
     width: 70vw;
     left: 50%;
     transform: translateX(-50%);
     top: -2.5vw;
   }
-  .kapcsolat_kep{
+  .kapcsolat_kep {
     height: 70vw;
     width: 65vw;
     margin-left: auto;
     margin-right: auto;
     position: relative;
-    display: block; /* Csak blokk elemeket lehet marginnal középre tenni */
-    float: none;    /* KIKAPCSOLJUK a lebegtetést, ha volt asztalin! */
-    left: 0;        /* Nullázzuk az esetleges asztali eltolásokat */
-    right: 0;
-    transform: none;
+    transform: translateX(-13%);
+  }
+  .kapcsolat_cim {
+    font-size: 5.5vw;
+  }
+  .form_box {
+    height: 33vw;
+    width: 35vw;
+  }
+  .form_field label,
+  .form_field input,
+  .form_field textarea,
+  .checkbox_container,
+  .form_options,
+  .form_buttons button {
+    font-size: 1.6vw;
   }
 }
 /* @media screen and (min-width: 2000px) {
