@@ -46,7 +46,7 @@ h3,
   position: relative;
   padding-top: 2.54vw;
 }
-.header_kep{
+.header_kep {
   background-color: #082005;
 }
 .kezdolap_elso img {
@@ -67,6 +67,7 @@ h3,
 .focim h1 {
   font-size: 20.34vw;
   line-height: 0.79;
+    animation: uszasBalrol 1s ease-out forwards;
 }
 .kezdolap_masodik {
   margin-top: 4.24vw;
@@ -96,6 +97,7 @@ h3,
   margin-bottom: 0;
   margin-left: 3.39vw;
 }
+
 .meg_cim {
   clear: right;
   margin-top: 0.85vw;
@@ -106,6 +108,7 @@ h3,
   line-height: 0.9;
   margin-bottom: 0;
   margin-left: 2.71vw;
+
 }
 .ismerj_cim {
   margin-top: 0.34vw;
@@ -113,6 +116,7 @@ h3,
   margin-bottom: -0.17vw;
   padding-bottom: 0;
   line-height: 0.7;
+
 }
 .jobb_oldal {
   margin-top: 0;
@@ -194,8 +198,8 @@ h3,
 header {
   position: sticky;
   top: 0;
- background-color: #fff8e6d9;
-/*  background-color: #e6dedace; */
+  background-color: #fff8e6d9;
+  /*  background-color: #e6dedace; */
   /* background-color: #082005d9; */
   z-index: 1000;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
@@ -330,6 +334,7 @@ footer a:active {
   margin-left: auto;
   margin-right: auto;
   z-index: 1;
+  animation: uszasLentrol 1s ease-out forwards;
 }
 .narancs_hatter {
   position: absolute;
@@ -501,6 +506,7 @@ footer a:active {
   position: relative;
   z-index: 1;
   font-size: 11vw;
+    animation: uszasJobbrol 1s ease-out forwards;
 }
 .Tcim2 {
   margin: 0;
@@ -510,6 +516,7 @@ footer a:active {
   z-index: 1;
   font-size: 11vw;
   padding-left: 1.3vw;
+    animation: uszasJobbrol 1s ease-out forwards;
 }
 .tapasztalat_masodik {
   height: 38vw;
@@ -632,40 +639,39 @@ video {
   border-top: 1px dashed rgba(255, 255, 255, 0.2);
   font-size: 1vw;
 }
-.tapasztalat_negyedik{
+.tapasztalat_negyedik {
   height: 38vw;
   margin-top: 8vw;
   text-align: justify;
   font-size: 1.9vw;
   position: relative;
 }
-.bodoo_grid{
+.bodoo_grid {
   display: grid;
   grid-template-columns: 1fr 1fr;
 }
 
-.bodoo_jobb{
+.bodoo_jobb {
   width: 45vw;
   justify-self: end;
-  
 }
-.bodoo_jobb img{
+.bodoo_jobb img {
   width: 100%;
   border-radius: 1vw;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
 }
-.bodoo_jobb img:hover{
+.bodoo_jobb img:hover {
   opacity: 0.8;
 }
-.bodoo_bal h3{
-font-size: 2vw;
-color: #e85d04;
-font-family: Inter ;
+.bodoo_bal h3 {
+  font-size: 2vw;
+  color: #e85d04;
+  font-family: Inter;
 }
-.bodoo_bal ol{
+.bodoo_bal ol {
   font-size: 1.5vw;
 }
-.bodoo_bal li{
+.bodoo_bal li {
   padding-bottom: 2vw;
 }
 
@@ -1072,6 +1078,36 @@ body.akadalymentes-mod h3 {
     transform: scale(1); /* Visszaáll a végére a normál méretre */
   }
 }
+/* Balról beúszó animáció */
+@keyframes uszasBalrol {
+  from {
+    transform: translateX(-100px); /* 100 pixellel balabbról indul */
+  }
+  to {
+    transform: translateX(0); /* Megérkezik az eredeti helyére */
+  }
+}
+
+/* Jobbról beúszó animáció */
+@keyframes uszasJobbrol {
+  from {
+    transform: translateX(100px); /* 100 pixellel jobbról indul */
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+@keyframes uszasLentrol {
+  from {
+    opacity: 0;
+    transform: translateY(50px); /* 50 pixellel lejjebbről indul */
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0); /* Beáll az eredeti helyére */
+  }
+}
+
 /* @media screen and (min-width: 2000px) {
   body {
     max-width: 80%; 
