@@ -10,6 +10,7 @@
   font-weight: 100 900;
   font-style: normal;
 }
+
 html {
   background-color: #fff8e6;
 }
@@ -165,6 +166,7 @@ h3,
   width: 10vw;
   top: -4.75vw;
   left: 2.71vw;
+  animation: lebeges 3s ease-in-out infinite;
 }
 .vezeteknev {
   margin: 0;
@@ -469,20 +471,24 @@ footer a:active {
   top: 0;
 }
 /* --------------------------------------------------Tapasztalat oldal--------------------------------------------------------- */
-.tapasztalat_elso{
+.tapasztalat_elso {
   background-color: #082005;
   width: 100%;
+  border-radius: 1.02vw;
   height: 27vw;
   display: grid;
   grid-template-columns: 1fr 1fr;
-  margin-top: 2.54vw ;
+  margin-top: 2.54vw;
   padding-top: 5vw;
-  padding-right: 15vw;
 }
-.tapasztalat_kep{
+.fokep_tarolo {
   width: 25vw;
   padding-left: 10vw;
   padding-top: 3vw;
+}
+.tapasztalat_kep {
+  width: 100%;
+  border-radius: 1.02vw;
 }
 .Tcim1 {
   margin: 0;
@@ -500,12 +506,167 @@ footer a:active {
   font-size: 11vw;
   padding-left: 1.3vw;
 }
-.tapasztalat_masodik{
-  height: 80vh;
+.tapasztalat_masodik {
+  height: 38vw;
+  margin-top: 20vw;
+  text-align: justify;
+  font-size: 1.9vw;
+  position: relative;
 }
+.tapasztalat_csillag1 {
+  position: absolute;
+  z-index: 10;
+  width: 8vw;
+  top: 0vw;
+  right: -1vw;
+  animation: lebeges 3s ease-in-out infinite;
+}
+.tapasztalat_csillag2 {
+  position: absolute;
+  z-index: 10;
+  width: 5vw;
+  top: -5vw;
+  right: 3vw;
+  animation: lebeges 3s ease-in-out infinite;
+}
+.tapasztalat_csillag3 {
+  position: absolute;
+  z-index: 10;
+  width: 9vw;
+  top: -5vw;
+  left: -1vw;
+  animation: csillogas 3s ease-in-out infinite;
+}
+.tapasztalat_masodik h2 {
+  font-size: 4.9vw;
+  margin: 0;
+}
+.tapasztalat_masodik p {
+  margin: 0;
+}
+.tablazat {
+  float: right;
+  background-color: #082005;
+  color: #f0f0f0;
+  padding: 2vw 4vw 2vw 4vw;
+  margin-left: 3vw;
+  margin-bottom: 2.7vh;
+  margin-top: 2vh;
+  border-radius: 1vw;
+  overflow-x: auto;
+}
+.tablazat table {
+  width: 100%;
+  border-collapse: collapse;
+  color: #f0f0f0;
+  font-size: 1.1vw;
+}
+
+.tablazat th,
+.tablazat td {
+  padding: 1vw;
+  text-align: left;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+.tablazat th {
+  color: #e85d04;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 0.1vw;
+}
+.tablazat tr:last-child td {
+  border-bottom: none;
+}
+.tablazat tr:hover td {
+  background-color: rgba(255, 255, 255, 0.05);
+  transition: background-color 0.3s ease;
+}
+.tapasztalat_harmadik {
+  position: relative;
+  height: 38vw;
+  margin-top: 6vw;
+  text-align: justify;
+  font-size: 1.9vw;
+}
+.tapasztalat_harmadik h2 {
+  text-align: right;
+  margin: 0;
+  font-size: 4.9vw;
+}
+.video_szoveg {
+  margin: 0;
+}
+.video_tarolo {
+  float: left;
+  width: 35vw;
+  padding-top: 3vh;
+  padding-right: 2vw;
+}
+video {
+  width: 100%;
+  border-radius: 1.02vw;
+}
+.video-leiras {
+  background-color: #ffffff00;
+  color: #e85d04;
+  padding: 1vw;
+  margin-top: 1vw;
+  border-radius: 1vw;
+  border: 1px solid #e85d04;
+}
+.video-leiras summary {
+  color: #e85d04;
+  font-weight: bold;
+  font-size: 1vw;
+  cursor: pointer;
+  list-style: none;
+}
+.leiras-tartalom {
+  margin-top: 1vw;
+  padding-top: 1vw;
+  border-top: 1px dashed rgba(255, 255, 255, 0.2);
+  font-size: 1vw;
+}
+.tapasztalat_negyedik{
+  height: 38vw;
+  margin-top: 8vw;
+  text-align: justify;
+  font-size: 1.9vw;
+  position: relative;
+}
+.bodoo_grid{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.bodoo_jobb{
+  width: 45vw;
+  justify-self: end;
+  
+}
+.bodoo_jobb img{
+  width: 100%;
+  border-radius: 1vw;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+}
+.bodoo_jobb img:hover{
+  opacity: 0.8;
+}
+.bodoo_bal h3{
+font-size: 2vw;
+color: #e85d04;
+font-family: Inter ;
+}
+.bodoo_bal ol{
+  font-size: 1.5vw;
+}
+.bodoo_bal li{
+  padding-bottom: 2vw;
+}
+
 /* --------------------------------------------------SÖTÉT MÓD--------------------------------------------------------- */
 body.sotet-mod {
-  background-color: #082005 !important;
+  background-color: #031100 !important;
   color: #f0f0f0 !important;
 }
 #tema_gomb {
@@ -881,6 +1042,29 @@ body.akadalymentes-mod h3 {
   .form_options,
   .form_buttons button {
     font-size: 1.6vw;
+  }
+}
+/*------------------------------------Animáció..................................-*/
+@keyframes lebeges {
+  0% {
+    transform: translateY(0px) rotate(0deg);
+  }
+  50% {
+    transform: translateY(-1vw) rotate(10deg);
+  }
+  100% {
+    transform: translateY(0px) rotate(0deg);
+  }
+}
+@keyframes csillogas {
+  0% {
+    transform: scale(1); /* Kezdőállapot: 100%-os, normál méret */
+  }
+  50% {
+    transform: scale(1.2); /* Féltávnál: megnő az 1.2-szeresére (120%) */
+  }
+  100% {
+    transform: scale(1); /* Visszaáll a végére a normál méretre */
   }
 }
 /* @media screen and (min-width: 2000px) {
