@@ -46,6 +46,9 @@ h3,
   position: relative;
   padding-top: 2.54vw;
 }
+.header_kep{
+  background-color: #082005;
+}
 .kezdolap_elso img {
   width: 100%;
   height: auto;
@@ -191,7 +194,9 @@ h3,
 header {
   position: sticky;
   top: 0;
-  background-color: #e6dedace;
+ background-color: #fff8e6d9;
+/*  background-color: #e6dedace; */
+  /* background-color: #082005d9; */
   z-index: 1000;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
   scroll-behavior: smooth;
