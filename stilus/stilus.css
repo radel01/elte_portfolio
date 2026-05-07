@@ -573,7 +573,16 @@ footer a:active {
   color: #f0f0f0;
   font-size: 1.1vw;
 }
+.tablazat caption {
+  text-align: left;
+  margin-bottom: 10px;
+}
 
+.tablazat summary {
+  cursor: pointer;
+  font-weight: bold;
+  color: #e85d04; /* A narancssárga színedhez igazítva */
+}
 .tablazat th,
 .tablazat td {
   padding: 1vw;
@@ -640,7 +649,7 @@ video {
   font-size: 1vw;
 }
 .tapasztalat_negyedik {
-  height: 38vw;
+  height: 46vw;
   margin-top: 8vw;
   text-align: justify;
   font-size: 1.9vw;
@@ -666,7 +675,6 @@ video {
 .bodoo_bal h3 {
   font-size: 2vw;
   color: #e85d04;
-  font-family: Inter;
 }
 .bodoo_bal ol {
   font-size: 1.5vw;
@@ -674,7 +682,17 @@ video {
 .bodoo_bal li {
   padding-bottom: 2vw;
 }
+figure {
+  margin: 0;
+  padding: 0;
+}
 
+figcaption {
+  font-size: 0.9rem;
+  color: #555;
+  margin-top: 8px;
+  text-align: center;
+}
 /* --------------------------------------------------SÖTÉT MÓD--------------------------------------------------------- */
 body.sotet-mod {
   background-color: #031100 !important;
@@ -917,6 +935,58 @@ body.akadalymentes-mod h3 {
   body.akadalymentes-mod header a.active {
     font-size: 3.4vw !important;
   }
+
+ @media (max-width: 900px) {
+  /* 1. A fő konténer legyen széles és rugalmas */
+  .form_kontener {
+    width: 90%;
+    margin: 2vw auto 10vw auto;
+    position: relative;
+    height: auto; /* Engedjük, hogy a tartalom nyújtsa meg */
+    
+  }
+
+  /* 2. A narancs háttér legyen fix alap, ami mögöttük van */
+  .narancs_hatter {
+    position: absolute;
+    top: -2vw;
+    left: -2vw;
+    width: calc(100% + 4vw);
+    height: 58vw;
+    z-index: -1;
+    /* A height: 55vw-t töröld ki vagy írd felül auto-ra! */
+  }
+
+  /* 3. A kép maradjon felül */
+  .kapcsolat_kep {
+    width: 100%;
+    height: auto;
+    position: relative;
+    top: 0;
+    left: 0;
+  }
+
+  .form_box {
+    position: absolute;
+    top: 0;
+    left: 0;
+    left: 68%;
+    top: 50%;
+    width: 55%;
+    margin-top: -5vw;
+    padding: 4vw;
+    height: auto;
+    grid-template-columns: 1fr;
+  }
+
+
+  /* Gombok elrendezése */
+  .form_buttons {
+    grid-template-columns: 1fr 1fr;
+    gap: 2vw;
+    margin-top: 4vw;
+  }
+}
   .kapcsolat_szekcio {
     height: 100vw;
     padding-top: 7vw;
@@ -925,12 +995,7 @@ body.akadalymentes-mod h3 {
     padding-bottom: 3vw;
     font-size: 4vw;
   }
-  .narancs_hatter {
-    height: 55vw;
-  }
-  .kapcsolat_kep {
-    height: 50vw;
-  }
+
   .form_field label,
   .form_field input,
   .form_field textarea {
@@ -939,8 +1004,28 @@ body.akadalymentes-mod h3 {
 }
 
 @media screen and (max-width: 600px) {
+  .fo_kontener {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+  }
+
+  .kod_kep {
+    border-radius: 15px;
+    order: 1;
+    float: none;
+    width: 100%;
+    margin-top: 5vw;
+    margin-bottom: 0;
+  }
+
+
   .hosszu_szoveg {
     font-size: 3.5vw;
+    order: 3;
+    line-height: 1.6;
+    margin-top: 0vw;
   }
   .kezdolap_harmadik {
     height: auto;
@@ -1010,42 +1095,18 @@ body.akadalymentes-mod h3 {
     order: 1;
     float: none;
     margin: 0;
-    margin-top: 0vw;
-    font-size: 18vw;
+    margin-top: 2vw;
+    font-size: 15vw;
     text-align: right;
-  }
-  .kod_kep {
-    order: 3;
-    float: none;
-    width: 100%;
-    margin-top: 5vw;
-    margin-bottom: 0;
   }
   .levelek_kep {
     visibility: hidden;
   }
-  .narancs_hatter {
-    height: 75vw;
-    width: 70vw;
-    left: 50%;
-    transform: translateX(-50%);
-    top: -2.5vw;
-  }
-  .kapcsolat_kep {
-    height: 70vw;
-    width: 65vw;
-    margin-left: auto;
-    margin-right: auto;
-    position: relative;
-    transform: translateX(-13%);
-  }
+  
   .kapcsolat_cim {
     font-size: 5.5vw;
   }
-  .form_box {
-    height: 33vw;
-    width: 35vw;
-  }
+  
   .form_field label,
   .form_field input,
   .form_field textarea,
@@ -1053,6 +1114,98 @@ body.akadalymentes-mod h3 {
   .form_options,
   .form_buttons button {
     font-size: 1.6vw;
+  }
+  /* 1. Szekció: Tapasztalatom cím és kép */
+  .tapasztalat_elso {
+    grid-template-columns: 1fr; /* Egy oszlop */
+    height: auto;
+    padding-bottom: 5vw;
+    text-align: center;
+  }
+  .fokep_tarolo {
+    width: 80%; /* Mobilon legyen hangsúlyosabb a kép */
+    padding-left: 0;
+    margin: 0 auto;
+  }
+  .Tcim1, .Tcim2 {
+    font-size: 18vw; /* Megnöveljük a betűt, hogy kitöltse a szélességet */
+    text-align: center;
+    padding-left: 0;
+  }
+
+  /* 2. Szekció: Mérföldkövek és Táblázat */
+  .tapasztalat_masodik {
+    height: auto;
+    margin-top: 10vw;
+    font-size: 3.5vw;
+  }
+  .tapasztalat_masodik h2 {
+    font-size: 10vw;
+    text-align: center;
+  }
+  .tablazat {
+    float: none;
+    width: 100%;
+    margin-left: 0;
+    margin-top: 5vw;
+    box-sizing: border-box;
+  }
+  .tablazat table {
+    font-size: 3vw;
+  }
+
+  /* 3. Szekció: Projektek és Videó */
+  .tapasztalat_harmadik {
+    height: auto;
+    margin-top: 15vw;
+    display: flex;
+    flex-direction: column;
+    font-size: 3.5vw;
+  }
+  .tapasztalat_harmadik h2 {
+    text-align: center;
+    font-size: 10vw;
+    order: 1; /* Cím legfelül */
+  }
+  .video_tarolo {
+    float: none;
+    width: 100%;
+    padding-right: 0;
+    order: 2; /* Videó a cím alá */
+    margin-bottom: 5vw;
+  }
+  .video_szoveg {
+    order: 3; /* Szöveg a videó alá */
+    font-size: 3.5vw;
+  }
+  .video-leiras summary, .leiras-tartalom {
+    font-size: 3vw;
+  }
+
+  /* 4. Szekció: Bodoo Projekt */
+  .tapasztalat_negyedik {
+    height: auto;
+    margin-top: 15vw;
+    font-size: 3.5vw;
+  }
+  .bodoo_grid {
+    grid-template-columns: 1fr; /* Egymás alá kerül a lista és a kép */
+    gap: 8vw;
+  }
+  .bodoo_bal {
+    order: 2; /* Szöveg alulra */
+  }
+  .bodoo_jobb {
+    width: 100%;
+    order: 1;
+    justify-self: center;
+  }
+  .bodoo_bal h3 {
+    font-size: 4vw;
+    text-align: center;
+  }
+  .bodoo_bal ol {
+    font-size: 3.5vw;
   }
 }
 /*------------------------------------Animáció..................................-*/
