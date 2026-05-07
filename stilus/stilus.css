@@ -258,7 +258,8 @@ footer {
 .footer_felsorolasok li {
   font-size: 1.36vw;
 }
-footer h3, footer h2 {
+footer h3,
+footer h2 {
   font-family: Inter;
   font-size: 1.69vw;
   margin-bottom: 0.85vw;
@@ -646,6 +647,7 @@ video {
 .bodoo_bal h3 {
   font-size: 2vw;
   color: #e85d04;
+  font-family: Inter;
 }
 .bodoo_bal ol {
   font-size: 1.5vw;
@@ -918,45 +920,43 @@ body.akadalymentes-mod .tapasztalat_negyedik {
   body.akadalymentes-mod header a.active {
     font-size: 3.4vw !important;
   }
-  @media (max-width: 900px) {
-    .form_kontener {
-      width: 90%;
-      margin: 2vw auto 10vw auto;
-      position: relative;
-      height: auto;
-    }
-    .narancs_hatter {
-      position: absolute;
-      top: -2vw;
-      left: -2vw;
-      width: calc(100% + 4vw);
-      height: 58vw;
-      z-index: -1;
-    }
-    .kapcsolat_kep {
-      width: 100%;
-      height: auto;
-      position: relative;
-      top: 0;
-      left: 0;
-    }
-    .form_box {
-      position: absolute;
-      top: 0;
-      left: 0;
-      left: 68%;
-      top: 50%;
-      width: 50%;
-      margin-top: -5vw;
-      padding: 4vw;
-      height: auto;
-      grid-template-columns: 1fr;
-    }
-    .form_buttons {
-      grid-template-columns: 1fr 1fr;
-      gap: 2vw;
-      margin-top: 4vw;
-    }
+  .form_kontener {
+    width: 90%;
+    margin: 2vw auto 10vw auto;
+    position: relative;
+    height: auto;
+  }
+  .narancs_hatter {
+    position: absolute;
+    top: -2vw;
+    left: -2vw;
+    width: calc(100% + 4vw);
+    height: 58vw;
+    z-index: -1;
+  }
+  .kapcsolat_kep {
+    width: 100%;
+    height: auto;
+    position: relative;
+    top: 0;
+    left: 0;
+  }
+  .form_box {
+    position: absolute;
+    top: 0;
+    left: 0;
+    left: 68%;
+    top: 50%;
+    width: 50%;
+    margin-top: -5vw;
+    padding: 4vw;
+    height: auto;
+    grid-template-columns: 1fr;
+  }
+  .form_buttons {
+    grid-template-columns: 1fr 1fr;
+    gap: 2vw;
+    margin-top: 4vw;
   }
   .kapcsolat_szekcio {
     height: 100vw;

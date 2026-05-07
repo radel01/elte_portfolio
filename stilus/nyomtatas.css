@@ -40,7 +40,7 @@ a {
 .kezdolap_elso {
   padding-top: 80pt;
 }
-.header_kep img {
+.header_kep img, .csillag_link, .tapasztalat_csillag3, .tapasztalat_csillag2, .tapasztalat_csillag1 {
   visibility: hidden;
 }
 h1,
