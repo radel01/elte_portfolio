@@ -10,7 +10,6 @@
   font-weight: 100 900;
   font-style: normal;
 }
-
 html {
   background-color: #fff8e6;
 }
@@ -32,7 +31,6 @@ main {
   padding-right: 2.03vw;
   flex-grow: 1;
 }
-
 h1,
 h2,
 h3,
@@ -54,7 +52,6 @@ h3,
   height: auto;
   display: block;
 }
-
 .focim {
   position: absolute;
   top: 61%;
@@ -97,7 +94,6 @@ h3,
   margin-bottom: 0;
   margin-left: 3.39vw;
 }
-
 .meg_cim {
   clear: right;
   margin-top: 0.85vw;
@@ -124,13 +120,11 @@ h3,
   margin-top: 0;
   height: 33.9vw;
 }
-
 .kezdolap_harmadik {
   height: 44.07vw;
   padding-top: 8.81vw;
   padding-bottom: 2.03vw;
 }
-
 .harmadik_grid {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
@@ -164,7 +158,6 @@ h3,
   z-index: 2;
   display: block;
 }
-
 .utolso_csillag {
   position: absolute;
   z-index: 1;
@@ -191,7 +184,6 @@ h3,
   margin-right: -0.68vw;
   letter-spacing: 0.0713em;
 }
-
 /* --------------------nav--------------------- */
 header {
   position: sticky;
@@ -228,7 +220,6 @@ nav a.active {
   color: #e85d04;
   font-weight: 800;
 }
-
 /* --------------------footer--------------------- */
 footer {
   background-color: #082005;
@@ -267,7 +258,8 @@ footer {
 .footer_felsorolasok li {
   font-size: 1.36vw;
 }
-footer h4 {
+footer h3, footer h2 {
+  font-family: Inter;
   font-size: 1.69vw;
   margin-bottom: 0.85vw;
   padding-top: 0;
@@ -278,7 +270,6 @@ footer h4 {
   margin-right: 0.85vw;
   padding-right: 0.85vw;
 }
-
 .footer_left {
   display: grid;
   grid-template-columns: 1fr 5fr;
@@ -314,14 +305,12 @@ footer a:active {
   padding-top: 1vw;
   margin-bottom: 5vw;
 }
-
 .kapcsolat_cim {
   margin-top: 0;
   margin-bottom: 3.2vw;
   font-size: 2.5vw;
   letter-spacing: -2px;
 }
-
 .form_kontener {
   position: relative;
   width: 50%;
@@ -351,7 +340,6 @@ footer a:active {
   background-repeat: no-repeat;
   aspect-ratio: 16 / 10;
 }
-
 .form_box {
   position: absolute;
   top: 40.5%;
@@ -368,18 +356,15 @@ footer a:active {
   gap: 0.5vw;
   align-content: start;
 }
-
 .form_field {
   display: flex;
   flex-direction: column;
   text-align: left;
 }
-
 .form_field label {
   font-size: 1.1vw;
   margin-bottom: 0.2vw;
 }
-
 .form_field input,
 .form_field textarea {
   font-family: "Inter", sans-serif;
@@ -396,7 +381,6 @@ footer a:active {
 .form_field textarea {
   background-color: rgba(255, 248, 230, 0.9);
 }
-
 .textarea_field label {
   margin-top: 0.4vw;
 }
@@ -404,7 +388,6 @@ footer a:active {
   display: grid;
   grid-template-columns: 1fr 1fr;
 }
-
 .form_options {
   align-items: center;
   gap: 1.2vw;
@@ -418,22 +401,18 @@ footer a:active {
   margin-bottom: 0.8vw;
   font-size: 1.1vw;
 }
-
 .option_group {
   display: flex;
   align-items: center;
   gap: 0.4vw;
 }
-
 .option_group input[type="radio"] {
   width: auto;
   margin: 0;
 }
-
 .standalone_check {
   margin-left: auto;
 }
-
 .form_buttons {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -442,7 +421,6 @@ footer a:active {
   margin-top: 1vw;
   justify-items: center;
 }
-
 .form_buttons button {
   font-family: "Inter", sans-serif;
   font-size: 1.1vw;
@@ -457,7 +435,6 @@ footer a:active {
   cursor: pointer;
   transition: background-color 0.3s ease;
 }
-
 .form_buttons button:hover {
   background-color: #e85d04;
 }
@@ -573,11 +550,10 @@ footer a:active {
   text-align: left;
   margin-bottom: 10px;
 }
-
 .tablazat summary {
   cursor: pointer;
   font-weight: bold;
-  color: #e85d04; /* A narancssárga színedhez igazítva */
+  color: #e85d04;
 }
 .tablazat th,
 .tablazat td {
@@ -655,7 +631,6 @@ video {
   display: grid;
   grid-template-columns: 1fr 1fr;
 }
-
 .bodoo_jobb {
   width: 45vw;
   justify-self: end;
@@ -682,7 +657,6 @@ figure {
   margin: 0;
   padding: 0;
 }
-
 figcaption {
   font-size: 0.9rem;
   color: #555;
@@ -713,13 +687,11 @@ body.sotet-mod {
 body.sotet-mod .form_box {
   background-color: #082005c4 !important;
 }
-
 #tema_gomb:hover {
   background-color: #e85d04;
   color: white;
   border-color: #e85d04;
 }
-
 footer {
   background-color: #041500;
 }
@@ -787,7 +759,6 @@ body.akadalymentes-mod h3 {
   justify-content: center;
   align-items: center;
 }
-/* Válaszd ki a gombodon belüli képet */
 #akadalymentes_gomb img {
   height: 1.5vw;
   width: auto;
@@ -796,9 +767,7 @@ body.akadalymentes-mod h3 {
 body.akadalymentes-mod .tapasztalat_negyedik {
   margin-bottom: 10vw;
 }
-
 /* --------------------------------------------------RESZPONZÍV NÉZETEK--------------------------------------------------------- */
-
 @media screen and (max-width: 900px) {
   .hosszu_szoveg {
     font-size: 2.2vw;
@@ -849,22 +818,18 @@ body.akadalymentes-mod .tapasztalat_negyedik {
     flex-direction: column;
     gap: 3vw;
   }
-
   .bal_oldal,
   .jobb_oldal {
     height: auto;
   }
-
   .jobb_oldal {
     order: 1;
     display: flex;
     flex-direction: column;
   }
-
   .bal_oldal {
     order: 2;
   }
-
   .ismerj_cim {
     font-size: 14vw;
     text-align: left;
@@ -872,7 +837,6 @@ body.akadalymentes-mod .tapasztalat_negyedik {
     position: relative;
     z-index: 2;
   }
-
   .meg_cim {
     order: 1;
     float: none;
@@ -881,7 +845,6 @@ body.akadalymentes-mod .tapasztalat_negyedik {
     margin: 0;
     margin-top: -2vw;
   }
-
   .hosszu_szoveg {
     order: 2;
     margin-top: 3vw;
@@ -894,15 +857,12 @@ body.akadalymentes-mod .tapasztalat_negyedik {
       "jobb jobb"
       "jobb jobb";
   }
-
   .jobb_oldal {
     grid-area: jobb;
   }
-
   .bal_oldal {
     height: 0;
   }
-
   .kod_kep {
     order: 3;
     float: none;
@@ -910,7 +870,6 @@ body.akadalymentes-mod .tapasztalat_negyedik {
     margin: 0;
     grid-area: kep;
   }
-
   .levelek_kep {
     visibility: hidden;
   }
@@ -959,17 +918,13 @@ body.akadalymentes-mod .tapasztalat_negyedik {
   body.akadalymentes-mod header a.active {
     font-size: 3.4vw !important;
   }
-
   @media (max-width: 900px) {
-    /* 1. A fő konténer legyen széles és rugalmas */
     .form_kontener {
       width: 90%;
       margin: 2vw auto 10vw auto;
       position: relative;
-      height: auto; /* Engedjük, hogy a tartalom nyújtsa meg */
+      height: auto;
     }
-
-    /* 2. A narancs háttér legyen fix alap, ami mögöttük van */
     .narancs_hatter {
       position: absolute;
       top: -2vw;
@@ -977,10 +932,7 @@ body.akadalymentes-mod .tapasztalat_negyedik {
       width: calc(100% + 4vw);
       height: 58vw;
       z-index: -1;
-      /* A height: 55vw-t töröld ki vagy írd felül auto-ra! */
     }
-
-    /* 3. A kép maradjon felül */
     .kapcsolat_kep {
       width: 100%;
       height: auto;
@@ -988,21 +940,18 @@ body.akadalymentes-mod .tapasztalat_negyedik {
       top: 0;
       left: 0;
     }
-
     .form_box {
       position: absolute;
       top: 0;
       left: 0;
       left: 68%;
       top: 50%;
-      width: 55%;
+      width: 50%;
       margin-top: -5vw;
       padding: 4vw;
       height: auto;
       grid-template-columns: 1fr;
     }
-
-    /* Gombok elrendezése */
     .form_buttons {
       grid-template-columns: 1fr 1fr;
       gap: 2vw;
@@ -1024,7 +973,6 @@ body.akadalymentes-mod .tapasztalat_negyedik {
     font-size: 1.6vw;
   }
 }
-
 @media screen and (max-width: 600px) {
   .fo_kontener {
     display: flex;
@@ -1032,7 +980,6 @@ body.akadalymentes-mod .tapasztalat_negyedik {
     align-items: center;
     padding: 20px;
   }
-
   .kod_kep {
     border-radius: 15px;
     order: 1;
@@ -1041,7 +988,6 @@ body.akadalymentes-mod .tapasztalat_negyedik {
     margin-top: 5vw;
     margin-bottom: 0;
   }
-
   .hosszu_szoveg {
     font-size: 3.5vw;
     order: 3;
@@ -1087,7 +1033,6 @@ body.akadalymentes-mod .tapasztalat_negyedik {
     text-align: center;
     margin-right: 0;
   }
-
   .kezdolap_masodik {
     height: auto;
     padding-bottom: 0vw;
@@ -1123,14 +1068,12 @@ body.akadalymentes-mod .tapasztalat_negyedik {
   .levelek_kep {
     visibility: hidden;
   }
-
   .kapcsolat_cim {
     font-size: 5.5vw;
   }
   #akadalymentes_gomb img {
     height: 3.3vw;
   }
-
   .form_field label,
   .form_field input,
   .form_field textarea,
@@ -1139,26 +1082,23 @@ body.akadalymentes-mod .tapasztalat_negyedik {
   .form_buttons button {
     font-size: 1.6vw;
   }
-  /* 1. Szekció: Tapasztalatom cím és kép */
   .tapasztalat_elso {
-    grid-template-columns: 1fr; /* Egy oszlop */
+    grid-template-columns: 1fr;
     height: auto;
     padding-bottom: 5vw;
     text-align: center;
   }
   .fokep_tarolo {
-    width: 80%; /* Mobilon legyen hangsúlyosabb a kép */
+    width: 80%;
     padding-left: 0;
     margin: 0 auto;
   }
   .Tcim1,
   .Tcim2 {
-    font-size: 18vw; /* Megnöveljük a betűt, hogy kitöltse a szélességet */
+    font-size: 18vw;
     text-align: center;
     padding-left: 0;
   }
-
-  /* 2. Szekció: Mérföldkövek és Táblázat */
   .tapasztalat_masodik {
     height: auto;
     margin-top: 10vw;
@@ -1178,8 +1118,6 @@ body.akadalymentes-mod .tapasztalat_negyedik {
   .tablazat table {
     font-size: 3vw;
   }
-
-  /* 3. Szekció: Projektek és Videó */
   .tapasztalat_harmadik {
     height: auto;
     margin-top: 15vw;
@@ -1190,36 +1128,34 @@ body.akadalymentes-mod .tapasztalat_negyedik {
   .tapasztalat_harmadik h2 {
     text-align: center;
     font-size: 10vw;
-    order: 1; /* Cím legfelül */
+    order: 1;
   }
   .video_tarolo {
     float: none;
     width: 100%;
     padding-right: 0;
-    order: 2; /* Videó a cím alá */
+    order: 2;
     margin-bottom: 5vw;
   }
   .video_szoveg {
-    order: 3; /* Szöveg a videó alá */
+    order: 3;
     font-size: 3.5vw;
   }
   .video-leiras summary,
   .leiras-tartalom {
     font-size: 3vw;
   }
-
-  /* 4. Szekció: Bodoo Projekt */
   .tapasztalat_negyedik {
     height: auto;
     margin-top: 15vw;
     font-size: 3.5vw;
   }
   .bodoo_grid {
-    grid-template-columns: 1fr; /* Egymás alá kerül a lista és a kép */
+    grid-template-columns: 1fr;
     gap: 8vw;
   }
   .bodoo_bal {
-    order: 2; /* Szöveg alulra */
+    order: 2;
   }
   .bodoo_jobb {
     width: 100%;
@@ -1248,29 +1184,26 @@ body.akadalymentes-mod .tapasztalat_negyedik {
 }
 @keyframes csillogas {
   0% {
-    transform: scale(1); /* Kezdőállapot: 100%-os, normál méret */
+    transform: scale(1);
   }
   50% {
-    transform: scale(1.2); /* Féltávnál: megnő az 1.2-szeresére (120%) */
+    transform: scale(1.2);
   }
   100% {
-    transform: scale(1); /* Visszaáll a végére a normál méretre */
+    transform: scale(1);
   }
 }
-/* Balról beúszó animáció */
 @keyframes uszasBalrol {
   from {
-    transform: translateX(-100px); /* 100 pixellel balabbról indul */
+    transform: translateX(-100px);
   }
   to {
-    transform: translateX(0); /* Megérkezik az eredeti helyére */
+    transform: translateX(0);
   }
 }
-
-/* Jobbról beúszó animáció */
 @keyframes uszasJobbrol {
   from {
-    transform: translateX(100px); /* 100 pixellel jobbról indul */
+    transform: translateX(100px);
   }
   to {
     transform: translateX(0);
@@ -1279,10 +1212,10 @@ body.akadalymentes-mod .tapasztalat_negyedik {
 @keyframes uszasLentrol {
   from {
     opacity: 0;
-    transform: translateY(50px); /* 50 pixellel lejjebbről indul */
+    transform: translateY(50px);
   }
   to {
     opacity: 1;
-    transform: translateY(0); /* Beáll az eredeti helyére */
+    transform: translateY(0);
   }
 }

@@ -6,19 +6,16 @@ footer,
 #akadalymentes_gomb {
   display: none !important;
 }
-
 video,
 .video_tarolo,
 .video-leiras {
   display: none !important;
 }
-
 img {
   max-width: 40% !important;
   height: auto !important;
   display: block;
 }
-
 body {
   background-color: transparent !important;
   color: #000000 !important;
@@ -27,7 +24,6 @@ body {
   margin: 0;
   padding: 0;
 }
-
 main,
 #fo-tartalom {
   width: 100% !important;
