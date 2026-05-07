@@ -1,0 +1,55 @@
+header,
+nav,
+footer,
+.skip-link,
+#tema_gomb,
+#akadalymentes_gomb {
+  display: none !important;
+}
+
+video,
+.video_tarolo,
+.video-leiras {
+  display: none !important;
+}
+
+img {
+  max-width: 40% !important;
+  height: auto !important;
+  display: block;
+}
+
+body {
+  background-color: transparent !important;
+  color: #000000 !important;
+  font-size: 12pt;
+  line-height: 1.5;
+  margin: 0;
+  padding: 0;
+}
+
+main,
+#fo-tartalom {
+  width: 100% !important;
+  margin: 0 !important;
+  padding: 0 !important;
+}
+a {
+  color: #000000 !important;
+  text-decoration: underline;
+}
+.nev_also {
+  padding-top: 40pt;
+}
+.kezdolap_elso {
+  padding-top: 80pt;
+}
+.header_kep img {
+  visibility: hidden;
+}
+h1,
+h2,
+h3 {
+  -webkit-text-stroke: 1px black;
+  color: white !important;
+}

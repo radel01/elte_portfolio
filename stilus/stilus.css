@@ -67,7 +67,7 @@ h3,
 .focim h1 {
   font-size: 20.34vw;
   line-height: 0.79;
-    animation: uszasBalrol 1s ease-out forwards;
+  animation: uszasBalrol 1s ease-out forwards;
 }
 .kezdolap_masodik {
   margin-top: 4.24vw;
@@ -108,7 +108,6 @@ h3,
   line-height: 0.9;
   margin-bottom: 0;
   margin-left: 2.71vw;
-
 }
 .ismerj_cim {
   margin-top: 0.34vw;
@@ -116,7 +115,6 @@ h3,
   margin-bottom: -0.17vw;
   padding-bottom: 0;
   line-height: 0.7;
-
 }
 .jobb_oldal {
   margin-top: 0;
@@ -181,7 +179,7 @@ h3,
   position: relative;
   z-index: 1;
   font-size: 9.32vw;
-  letter-spacing: 0.0855em;
+  letter-spacing: 0.089em;
 }
 .keresztnev {
   margin: 0;
@@ -191,7 +189,7 @@ h3,
   z-index: 1;
   font-size: 9.32vw;
   margin-right: -0.68vw;
-  letter-spacing: 0.0593em;
+  letter-spacing: 0.0713em;
 }
 
 /* --------------------nav--------------------- */
@@ -199,8 +197,6 @@ header {
   position: sticky;
   top: 0;
   background-color: #fff8e6d9;
-  /*  background-color: #e6dedace; */
-  /* background-color: #082005d9; */
   z-index: 1000;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
   scroll-behavior: smooth;
@@ -506,7 +502,7 @@ footer a:active {
   position: relative;
   z-index: 1;
   font-size: 11vw;
-    animation: uszasJobbrol 1s ease-out forwards;
+  animation: uszasJobbrol 1s ease-out forwards;
 }
 .Tcim2 {
   margin: 0;
@@ -516,7 +512,7 @@ footer a:active {
   z-index: 1;
   font-size: 11vw;
   padding-left: 1.3vw;
-    animation: uszasJobbrol 1s ease-out forwards;
+  animation: uszasJobbrol 1s ease-out forwards;
 }
 .tapasztalat_masodik {
   height: 38vw;
@@ -741,23 +737,30 @@ body.akadalymentes-mod #tema_gomb {
   color: white;
   border-color: white;
 }
+.szem {
+  max-width: 2vw;
+  max-height: 2vw;
+}
 body.akadalymentes-mod p,
 body.akadalymentes-mod a,
 body.akadalymentes-mod li {
   font-size: 2vw !important;
-  color: #ffffff !important;
+  color: #ffff00 !important;
   font-weight: bold !important;
 }
 body.akadalymentes-mod a.active {
   font-size: 2vw !important;
-  color: #ffff00 !important;
+  color: #ffffff !important;
   font-weight: bold !important;
 }
 body.akadalymentes-mod a:visited {
-  color: #ffff00 !important;
+  color: #ff0000 !important;
 }
 body.akadalymentes-mod a:hover {
   color: #ff0000 !important;
+}
+body.akadalymentes-mod .video_leiras_p {
+  font-size: 1.3vw !important;
 }
 body.akadalymentes-mod h1,
 body.akadalymentes-mod h2,
@@ -780,6 +783,18 @@ body.akadalymentes-mod h3 {
   font-size: 1.2vw;
   padding: 0.3vw 0.8vw;
   right: 2vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+/* Válaszd ki a gombodon belüli képet */
+#akadalymentes_gomb img {
+  height: 1.5vw;
+  width: auto;
+  display: block;
+}
+body.akadalymentes-mod .tapasztalat_negyedik {
+  margin-bottom: 10vw;
 }
 
 /* --------------------------------------------------RESZPONZÍV NÉZETEK--------------------------------------------------------- */
@@ -899,15 +914,24 @@ body.akadalymentes-mod h3 {
   .levelek_kep {
     visibility: hidden;
   }
-  #tema_gomb,
-  #akadalymentes_gomb {
+  #tema_gomb {
     font-size: 3vw;
     padding: 1.1vw 2.5vw;
     border-radius: 5vw;
     border-width: 0.3vw;
   }
+  #akadalymentes_gomb img {
+    height: 3.3vw;
+    width: auto;
+    display: block;
+    padding: 1.1vw 2.5vw;
+  }
+  #akadalymentes_gomb {
+    border-radius: 5vw;
+    border-width: 0.3vw;
+  }
   #tema_gomb {
-    right: 12vw;
+    right: 13vw;
   }
   header {
     height: 8.54vw;
@@ -936,57 +960,55 @@ body.akadalymentes-mod h3 {
     font-size: 3.4vw !important;
   }
 
- @media (max-width: 900px) {
-  /* 1. A fő konténer legyen széles és rugalmas */
-  .form_kontener {
-    width: 90%;
-    margin: 2vw auto 10vw auto;
-    position: relative;
-    height: auto; /* Engedjük, hogy a tartalom nyújtsa meg */
-    
-  }
+  @media (max-width: 900px) {
+    /* 1. A fő konténer legyen széles és rugalmas */
+    .form_kontener {
+      width: 90%;
+      margin: 2vw auto 10vw auto;
+      position: relative;
+      height: auto; /* Engedjük, hogy a tartalom nyújtsa meg */
+    }
 
-  /* 2. A narancs háttér legyen fix alap, ami mögöttük van */
-  .narancs_hatter {
-    position: absolute;
-    top: -2vw;
-    left: -2vw;
-    width: calc(100% + 4vw);
-    height: 58vw;
-    z-index: -1;
-    /* A height: 55vw-t töröld ki vagy írd felül auto-ra! */
-  }
+    /* 2. A narancs háttér legyen fix alap, ami mögöttük van */
+    .narancs_hatter {
+      position: absolute;
+      top: -2vw;
+      left: -2vw;
+      width: calc(100% + 4vw);
+      height: 58vw;
+      z-index: -1;
+      /* A height: 55vw-t töröld ki vagy írd felül auto-ra! */
+    }
 
-  /* 3. A kép maradjon felül */
-  .kapcsolat_kep {
-    width: 100%;
-    height: auto;
-    position: relative;
-    top: 0;
-    left: 0;
-  }
+    /* 3. A kép maradjon felül */
+    .kapcsolat_kep {
+      width: 100%;
+      height: auto;
+      position: relative;
+      top: 0;
+      left: 0;
+    }
 
-  .form_box {
-    position: absolute;
-    top: 0;
-    left: 0;
-    left: 68%;
-    top: 50%;
-    width: 55%;
-    margin-top: -5vw;
-    padding: 4vw;
-    height: auto;
-    grid-template-columns: 1fr;
-  }
+    .form_box {
+      position: absolute;
+      top: 0;
+      left: 0;
+      left: 68%;
+      top: 50%;
+      width: 55%;
+      margin-top: -5vw;
+      padding: 4vw;
+      height: auto;
+      grid-template-columns: 1fr;
+    }
 
-
-  /* Gombok elrendezése */
-  .form_buttons {
-    grid-template-columns: 1fr 1fr;
-    gap: 2vw;
-    margin-top: 4vw;
+    /* Gombok elrendezése */
+    .form_buttons {
+      grid-template-columns: 1fr 1fr;
+      gap: 2vw;
+      margin-top: 4vw;
+    }
   }
-}
   .kapcsolat_szekcio {
     height: 100vw;
     padding-top: 7vw;
@@ -1020,7 +1042,6 @@ body.akadalymentes-mod h3 {
     margin-bottom: 0;
   }
 
-
   .hosszu_szoveg {
     font-size: 3.5vw;
     order: 3;
@@ -1048,7 +1069,7 @@ body.akadalymentes-mod h3 {
     width: 40%;
   }
   .utolso_csillag {
-    left: 12%;
+    left: 14%;
     top: -23%;
     height: 70vw;
     width: 70vw;
@@ -1102,11 +1123,14 @@ body.akadalymentes-mod h3 {
   .levelek_kep {
     visibility: hidden;
   }
-  
+
   .kapcsolat_cim {
     font-size: 5.5vw;
   }
-  
+  #akadalymentes_gomb img {
+    height: 3.3vw;
+  }
+
   .form_field label,
   .form_field input,
   .form_field textarea,
@@ -1127,7 +1151,8 @@ body.akadalymentes-mod h3 {
     padding-left: 0;
     margin: 0 auto;
   }
-  .Tcim1, .Tcim2 {
+  .Tcim1,
+  .Tcim2 {
     font-size: 18vw; /* Megnöveljük a betűt, hogy kitöltse a szélességet */
     text-align: center;
     padding-left: 0;
@@ -1178,7 +1203,8 @@ body.akadalymentes-mod h3 {
     order: 3; /* Szöveg a videó alá */
     font-size: 3.5vw;
   }
-  .video-leiras summary, .leiras-tartalom {
+  .video-leiras summary,
+  .leiras-tartalom {
     font-size: 3vw;
   }
 
@@ -1260,36 +1286,3 @@ body.akadalymentes-mod h3 {
     transform: translateY(0); /* Beáll az eredeti helyére */
   }
 }
-
-/* @media screen and (min-width: 2000px) {
-  body {
-    max-width: 80%; 
-    margin: 0 auto; 
-    position: relative; 
-    overflow-x: hidden; 
-    box-shadow: 0px 0px 50px rgba(0, 0, 0, 0.05);
-  }
-  p, .hosszu_szoveg {
-    font-size: 44px;
-  }
-  .focim h1{
-    font-size: 400px;
-  }
-  .szoveg_oszlop h3{
-    font-size: 35px;
-  }
-  .szoveg_oszlop p{
-    padding-right: 100px;
-  }
-  .ismerj_cim, .meg_cim {
-    font-size: 260px; 
-  }
-  .vezeteknev, .keresztnev {
-    font-size: 179px;
-  }
-  .utolso_csillag {
-    left: -12%;
-    top: -16%;
-  }
-}
- */
